@@ -3,26 +3,36 @@
   <script src="node_modules/angular/angular.min.js" type="text/javascript"></script>
   <script src="node_modules/angular-route/angular-route.js" type="text/javascript"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="node_modules/angularfire/dist/angularfire.min.js" type="text/javascript"></script>
+  <script src="node_modules/firebase/firebase.js" type="text/javascript"></script>
   <script src="node_modules/bootstrap/dist/js/npm.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
   <title></title>
 </head>
 <body>
+  <div ng-view></div>
   <nav class="navbar navbar-default">
     <div class="navbar-header">
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Sign in</a></li>
-    </ul>
-  </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Sign in</a></li>
+      </ul>
+    </div>
   </nav>
 
-    <!-- Module -->
-    <script src="js/app.js"></script>
-    <!-- Services  -->
+  <!-- Module -->
+  <script src="js/app.js"></script>
 
-    <!-- Controller  -->
-    <script src="js/controllers/HomeController.js"></script>
-  </body>
-  </html>
+  <!-- Services  -->
+  <script src="js/services/firebase.js"></script>
+
+  <!-- Directives  -->
+  <script src="js/directives/diamondform.js"></script>
+
+  <!-- Controller  -->
+  <script src="js/controllers/HomeController.js"></script>
+  <script src="js/controllers/DiamondFormController.js"></script>
+
+</body>
+</html>
