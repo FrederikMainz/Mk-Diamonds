@@ -1,23 +1,23 @@
 <form novalidate class="simple-form">
-	Lot No.: <input class="form-control" ng-model="diamond.lot" /><br />
-	Shape: <input  ng-model="diamond.shape" /><br />
-	Weight: <input  ng-model="diamond.weight" /><br />
-	Color: <input  ng-model="diamond.color" /><br />
-	Clarify: <input  ng-model="diamond.clarify" /><br />
-	Measurement: <input  ng-model="diamond.measurement" /><br />
-	Depth: <input  ng-model="diamond.depth" /><br />
-	Table: <input  ng-model="diamond.table" /><br />
-	Girdle: <input  ng-model="diamond.girdle" /><br />
-	Culet: <input  ng-model="diamond.culet" /><br />
-	Pol.: <input  ng-model="diamond.pol" /><br />
-	Fluor.: <input  ng-model="diamond.fluor" /><br />
-	Cut: <input  ng-model="diamond.cut" /><br />
-	Certificate: <input  ng-model="diamond.certificate" /><br />
-	R-%: <input  ng-model="diamond.r" /><br />
-	Price/Ct: <input  ng-model="diamond.ct" /><br />
+	Lot No.: <input class="form-control"  ng-model="diamond.lot" /><br />
+	Shape: <input class="form-control"   ng-model="diamond.shape" /><br />
+	Weight: <input class="form-control"   ng-model="diamond.weight" /><br />
+	Color: <input class="form-control"   ng-model="diamond.color" /><br />
+	Clarify: <input class="form-control"   ng-model="diamond.clarify" /><br />
+	Measurement: <input class="form-control"   ng-model="diamond.measurement" /><br />
+	Depth: <input class="form-control"   ng-model="diamond.depth" /><br />
+	Table: <input class="form-control"   ng-model="diamond.table" /><br />
+	Girdle: <input class="form-control"   ng-model="diamond.girdle" /><br />
+	Culet: <input class="form-control"   ng-model="diamond.culet" /><br />
+	Pol.: <input class="form-control"   ng-model="diamond.pol" /><br />
+	Fluor.: <input class="form-control"   ng-model="diamond.fluor" /><br />
+	Cut: <input class="form-control"   ng-model="diamond.cut" /><br />
+	Certificate: <input class="form-control"   ng-model="diamond.certificate" /><br />
+	R-%: <input class="form-control"   ng-model="diamond.r" /><br />
+	Price/Ct: <input class="form-control"   ng-model="diamond.ct" /><br />
 
-	<input type="button" ng-click="reset()" value="Reset" />
-	<input type="submit" ng-click="update(diamond)" value="Save" />
+	<input class="form-control"  type="button" ng-click="reset()" value="Reset" />
+	<input class="form-control"  type="submit" ng-click="post(diamond)" value="Save" />
 </form>
-<pre>diamond = {{diamond | json}}</pre>
+<pre>diamond = {{diamondData | json}}</pre>
 <pre>master = {{master | json}}</pre>

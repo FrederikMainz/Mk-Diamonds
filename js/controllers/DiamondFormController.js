@@ -1,5 +1,6 @@
-app.controller('DiamondFormController',['$scope', function ($scope) {
+app.controller('DiamondFormController',['$scope','firebaseService' , function ($scope, firebaseService) {
 	$scope.master = {};
+	$scope.diamondData = firebaseService;
 
 		 $scope.update = function(diamond) {
 			 $scope.master = angular.copy(diamond);
@@ -9,9 +10,12 @@ app.controller('DiamondFormController',['$scope', function ($scope) {
 			 $scope.diamond = angular.copy($scope.master);
 		 };
 
-		 $scope.post = function() {
+		 $scope.post = function(postObject) {
+			$scope.diamondData.push().set(postObject);
+			$scope.diamondData.$save();
 
 		 }
+
 
 		 $scope.reset();
 }]);
