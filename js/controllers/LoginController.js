@@ -7,11 +7,6 @@ app.controller('LoginController', ['$scope','$rootScope' ,'$firebaseAuth','$loca
         $("#close_login").click(function(){
             hidepopup();
         });
-    });
-<<<<<<< Updated upstream
-    $("#close_login").click(function(){
-      hidepopup();
-    });
   });
   function showpopup()
   {
@@ -25,18 +20,6 @@ app.controller('LoginController', ['$scope','$rootScope' ,'$firebaseAuth','$loca
     $("#loginform").css({"visibility":"hidden","display":"none"});
     $(".login-background").css({"visibility":"hidden","display":"none"});
   }
-=======
-    function showpopup()
-    {
-        $("#loginform").fadeIn();
-        $("#loginform").css({"visibility":"visible","display":"block"});
-    }
-    function hidepopup()
-    {
-        $("#loginform").fadeOut();
-        $("#loginform").css({"visibility":"hidden","display":"none"});
-    }
->>>>>>> Stashed changes
 
     // Connect to firebase and create the firebase reference
     var ref = new Firebase("https://amber-fire-6969.firebaseio.com");
@@ -56,6 +39,7 @@ app.controller('LoginController', ['$scope','$rootScope' ,'$firebaseAuth','$loca
                 $timeout(function () {
                     $location.path('/account');
                     $("#loginform").css({"visibility":"hidden","display":"none"});
+                    $(".login-background").css({"visibility":"hidden","display":"none"});
                 });
             }
         });
