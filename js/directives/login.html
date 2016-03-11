@@ -1,18 +1,21 @@
 
-<a id="close_login" href="#close_login">
-  <i class="fa fa-times pull-right"></i>
+<a id="close_login">
+    <i class="fa fa-times pull-right"></i>
 </a>
 <h3>Sign in</h3>
-<form novalidate class="simple-form">
-  <div class="form-group">
-    <input type="text" ng-model="user.name" class="form-control custom-input" placeholder="Email Address"/>
-  </div>
-  <div class="form-group">
-    <input type="email" ng-model="user.email" class="form-control custom-input" placeholder="Password"/>
-  </div>
-  <div class="pull-right text-right custom-link">
-    <a href="#">Don't have an account? Register here.</a><br>
-    <a href="#">I forgot my password</a>
-  </div>
-  <input type="submit" ng-click="update(user)" value="Login" class="btn btn-success" />
+<form novalidate class="simple-form" ng-submit="loginButton(email, password)">
+    <div class="form-group">
+        <input type="email" class="form-control custom-input" placeholder="Email Address" ng-model="email"/>
+    </div>
+    <div class="form-group">
+        <input type="password"  class="form-control custom-input" placeholder="Password" ng-model="password"/>
+    </div>
+    <div class="form-group error-message">
+        {{errorMessage}}
+    </div>
+    <div class="pull-right text-right custom-link">
+        <a href="#">Don't have an account? Register here.</a><br>
+        <a href="#">I forgot my password</a>
+    </div>
+    <input type="submit" value="Login" class="btn btn-success" />
 </form>
