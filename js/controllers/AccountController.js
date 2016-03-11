@@ -1,12 +1,14 @@
-app.controller('AccountController', ['$scope','$rootScope','$location','Auth', function($scope, $rootScope, $firebaseAuth, $location, Auth){
+app.controller('AccountController', ['$scope','$rootScope','$timeout','$location', function($scope, $rootScope, $timeout, $location){
 
     // Connect to firebase and create the firebase reference
-      var ref = new Firebase("https://amber-fire-6969.firebaseio.com");
+    var ref = new Firebase("https://amber-fire-6969.firebaseio.com");
 
     //   Button for loggin out
     $scope.logoutButton = function() {
         ref.unauth();
-        $location.path('/');
+        $timeout(function () {
+            $location.path('/');
+        });
     }
     console.log(ref);
 }]);

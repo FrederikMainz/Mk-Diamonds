@@ -1,0 +1,14 @@
+
+notification div p{
+    background-color: black;
+    padding: 20px 40px;
+    text-align: left;
+    display: inline;
+    position: fixed;
+    top: 70px;
+    left: 40px;
+    z-index: 99;
+    border-radius: 4px;
+    color: white;
+    opacity: 0.8;
+}
