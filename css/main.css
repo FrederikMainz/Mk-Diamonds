@@ -1,70 +1,148 @@
 /* Styling of the pop-up login box*/
 login-service{
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    width: 400px;
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    margin-top: -100px;
-    margin-left: -150px;
-    z-index: 99;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -150px;
+  z-index: 99;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 login-service h3{
-    margin-top: 5px;
-    margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 #loginform{
-    visibility: hidden;
+  visibility: hidden;
+}
+
+.login-background{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 98;
+  visibility: hidden;
 }
 
 .error-message{
-    color: tomato;
+  color: tomato;
+}
+
+.custon-input:focus, .custom-input{
+  outline: none;
+  border: 2px solid #e8ebed !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+
 }
 
 .custom-input{
-    background: #e8ebed !important;
-    border: 0;
-    padding: 20px 20px !important;
+  background: #e8ebed !important;
+  border: 0;
+  padding: 20px 20px !important;
+}
+
+.custom-input:focus{
+  background-color: white !important;
+}
+
+::-webkit-input-placeholder {
+  color: #ff0000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #ff0000;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #ff0000;
+}
+
+:-ms-input-placeholder {
+  color: #ff0000;
 }
 
 body{
-    overflow-x: hidden;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif !important;
 }
 
 a, a:link, a:focus{
-    color: #71818f !important;
+  color: #71818f !important;
 }
 
 a:hover{
-    color: #398439 !important;
-    text-decoration: none !important;
+  color: #398439 !important;
+  text-decoration: none !important;
 }
 
 .btn{
-    padding: 10px 30px !important;
-    font-size: 18px !important;
-    font-family: "Gotham Rounded A", "Gotham Rounded B", "Helvetica", "";
-
+  padding: 10px 30px !important;
+  font-size: 18px !important;
 }
 
 .navbar-brand fa-diamond{
-    color: 66FF33l !important;
+  color: 66FF33l !important;
 }
 
 .image-header{
-    position: relative;
-    background-image: url("../img/1cuttingpolish1300X900.png");
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+  position: relative;
+  background-image: url("../img/1cuttingpolish1300X900.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.signup-header{
+  position: relative;
+  background-image: url("../img/bg_diamond_trail.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.signup-box{
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 100px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup-box h4{
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.signup-title{
+  color: white;
+  background-color: #3ac162;
+  margin: -20px;
+  margin-top: -25px;
+  margin-bottom: 30px;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px;
+  padding-top: 20px;
+  text-align: center;
 }
 
 .navbar{
-    margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+.navbar-default{
+  z-index: 50 !important;
+  background: white !important;
 }

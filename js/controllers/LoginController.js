@@ -12,11 +12,13 @@ app.controller('LoginController', ['$scope','$rootScope', function($scope, $root
   {
     $("#loginform").fadeIn();
     $("#loginform").css({"visibility":"visible","display":"block"});
+    $(".login-background").css({"visibility":"visible","display":"block"});
   }
   function hidepopup()
   {
     $("#loginform").fadeOut();
     $("#loginform").css({"visibility":"hidden","display":"none"});
+    $(".login-background").css({"visibility":"hidden","display":"none"});
   }
 
 // Connect to firebase and create the firebase reference
