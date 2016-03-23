@@ -1,7 +1,9 @@
-app.factory('catalogService', [function($firebaseObject) {
-	var ref = new Firebase("https://agwebapp.firebaseio.com/");
+app.factory('catalogService', ["$firebaseObject",
+function($firebaseObject) {
+	var ref = new Firebase("https://mk-diamonds-catalog.firebaseio.com");
 
-	 // download the data into a local object
-	 var syncObject = $firebaseObject(ref);
-	 return syncObject;
+	// download the data into a local object
+	var syncObject = $firebaseObject(ref);
+
+	return syncObject;
 }]);
