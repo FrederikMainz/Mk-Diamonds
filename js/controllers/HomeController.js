@@ -11,14 +11,14 @@ app.controller('HomeController',['$scope','$timeout','$location', '$rootScope','
       $rootScope.isLoggedIn = true;
       $rootScope.email = authData.password.email;
       $scope.$apply();
-    } else {
+    } else{
       $rootScope.isLoggedIn = false;
       $rootScope.email = "";
       $scope.$apply();
     }
-    });
+  });
 
-  //   Button for loggin out
+  //   Button for loggin out - that redirects to the front page when unath has occured.
   $rootScope.logoutButton = function() {
     ref.unauth();
     $timeout(function () {
